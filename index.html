@@ -22,6 +22,20 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}footer{font-size:13px
 <div class="card"><h3>Publish</h3><div class="dim">Posts the finished video to the owner's own Facebook Page or TikTok account, with the privacy and interaction settings the owner chooses.</div></div>
 </div>
 
+<h2>How the Facebook integration works</h2>
+<ol>
+<li><b>Connect:</b> in CN.AI → Settings → Fanpage, the user clicks <i>Continue with Facebook</i>. Facebook Login opens; the user chooses which Pages CN.AI may manage and approves the permissions.</li>
+<li><b>Assign:</b> the user assigns each content channel in CN.AI to one of their Pages.</li>
+<li><b>Review and publish:</b> every post waits in the review queue. When the user approves it, CN.AI schedules the video or photo on that Page at the time the user picked, and can add the user's link in the first comment.</li>
+<li><b>Results:</b> CN.AI reads views, reactions, comments and reach of the posts it published, so the owner sees in one report which videos work.</li>
+</ol>
+<table><tr><th>Facebook permission</th><th>Why CN.AI needs it</th></tr>
+<tr><td><code>pages_show_list</code></td><td>List the Pages the user manages so they can assign each channel to a Page.</td></tr>
+<tr><td><code>pages_manage_posts</code></td><td>Publish and schedule the videos/photos the user approved on their own Page; edit or delete them when the user asks.</td></tr>
+<tr><td><code>pages_read_engagement</code></td><td>Read the Page's name, follower count and the published post's link and engagement.</td></tr>
+<tr><td><code>pages_manage_engagement</code></td><td>Add the user's link as the first comment on the post they published.</td></tr>
+<tr><td><code>read_insights</code></td><td>Show post views and reach in the CN.AI report.</td></tr></table>
+
 <h2>How the TikTok integration works</h2>
 <ol>
 <li><b>Connect:</b> in CN.AI → Settings, the user clicks <i>Connect TikTok</i>. The TikTok login page opens (Login Kit, OAuth with PKCE); the user signs in and authorizes CN.AI. The user can disconnect at any time.</li>
@@ -38,7 +52,7 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}footer{font-size:13px
 </table>
 
 <h2>Your data</h2>
-<p>CN.AI runs on your own computer. TikTok access tokens and your videos stay on that computer; they are not sent to our servers, sold or shared. See the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+<p>CN.AI runs on your own computer. TikTok access tokens and your videos stay on that computer; they are not sent to our servers, sold or shared. See the <a href="privacy.html">Privacy Policy</a>, <a href="terms.html">Terms of Service</a> and <a href="data-deletion.html">Data deletion instructions</a>.</p>
 
 <hr>
 <div class="top"><img src="logo.png" alt=""><div><h1 style="font-size:24px">CN.AI (Tiếng Việt)</h1><div class="dim">Ứng dụng đăng video mạng xã hội trên máy tính · macOS</div></div></div>
@@ -51,5 +65,5 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}footer{font-size:13px
 </ul>
 <p>Mã truy cập TikTok và video chỉ lưu trên máy người dùng. Liên hệ: <a href="mailto:dvchinh155@gmail.com">dvchinh155@gmail.com</a></p>
 
-<hr><footer>© 2026 CN.AI · <a href="privacy.html">Privacy / Quyền riêng tư</a> · <a href="terms.html">Terms / Điều khoản</a> · <a href="mailto:dvchinh155@gmail.com">Contact</a></footer>
+<hr><footer>© 2026 CN.AI · <a href="privacy.html">Privacy / Quyền riêng tư</a> · <a href="terms.html">Terms / Điều khoản</a> · <a href="data-deletion.html">Data deletion</a> · <a href="mailto:dvchinh155@gmail.com">Contact</a></footer>
 </div></body></html>

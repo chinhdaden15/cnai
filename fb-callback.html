@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CN.AI – Connecting Facebook</title>
+<style>body{margin:0;background:#0f1012;color:#ececee;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}.w{max-width:560px;margin:0 auto;padding:48px 16px}a{color:#4f8cff}</style></head>
+<body><div class="w"><h1>CN.AI</h1><p id="m">Returning to the CN.AI app on your computer…</p>
+<p style="color:#a0a1a8;font-size:14px">CN.AI runs on your own computer. This page only hands the Facebook authorization back to the app at 127.0.0.1; nothing is stored here.</p></div>
+<script>
+const q = location.search;
+if (/[?&](code|error)=/.test(q)) location.replace('http://127.0.0.1:8800/fb/callback' + q);
+else document.getElementById('m').textContent = 'Nothing to do here. Open CN.AI and click "Continue with Facebook".';
+</script></body></html>
