@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="logo.png">
+<title>CN.AI – Social video publisher for desktop</title>
+<meta name="description" content="CN.AI is a desktop app that plans, produces and publishes short vertical videos to your own Facebook Pages and TikTok account.">
+<style>:root{--bg:#0f1012;--panel:#17181b;--line:#2a2b30;--fg:#ececee;--fg2:#a0a1a8;--acc:#4f8cff}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:32px 16px 48px}a{color:var(--acc)}h1{font-size:30px;margin:0;line-height:1.2}h2{font-size:19px;margin:34px 0 10px}h3{font-size:15px;margin:0 0 4px}
+.dim{color:var(--fg2)}.top{display:flex;gap:14px;align-items:center}.top img{width:56px;height:56px;border-radius:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+ol li{margin:6px 0}table{width:100%;border-collapse:collapse;font-size:14px}td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+.btn{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;border-radius:8px;padding:10px 18px;font-weight:600}
+hr{border:0;border-top:1px solid var(--line);margin:40px 0}footer{font-size:13px;color:var(--fg2)}</style></head><body><div class="wrap">
+
+<div class="top"><img src="logo.png" alt="CN.AI logo"><div><h1>CN.AI</h1><div class="dim">Social video publisher for desktop · macOS</div></div></div>
+<p style="font-size:17px;margin-top:18px">CN.AI is a desktop application that helps creators and small content teams plan, produce and publish short vertical videos to <b>their own</b> Facebook Pages and TikTok account — from one place, on their own computer.</p>
+<p><a class="btn" href="mailto:dvchinh155@gmail.com?subject=CN.AI%20access">Request access</a> &nbsp; <a href="https://ccut-license.dvchinh155.workers.dev/huong-dan">Installation guide</a></p>
+
+<h2>What CN.AI does</h2>
+<div class="grid">
+<div class="card"><h3>Plan</h3><div class="dim">Builds a weekly content calendar per channel (topics, posting times) that the owner reviews and approves.</div></div>
+<div class="card"><h3>Write</h3><div class="dim">Drafts the script, caption and hashtags for each video. Every post waits in the review queue until the owner approves it.</div></div>
+<div class="card"><h3>Produce</h3><div class="dim">Sends the approved script to the C-Cut video editor on the same computer, which renders a 9:16 video.</div></div>
+<div class="card"><h3>Publish</h3><div class="dim">Posts the finished video to the owner's own Facebook Page or TikTok account, with the privacy and interaction settings the owner chooses.</div></div>
+</div>
+
+<h2>How the TikTok integration works</h2>
+<ol>
+<li><b>Connect:</b> in CN.AI → Settings, the user clicks <i>Connect TikTok</i>. The TikTok login page opens (Login Kit, OAuth with PKCE); the user signs in and authorizes CN.AI. The user can disconnect at any time.</li>
+<li><b>Choose a video:</b> in the post list, the user opens a finished video and clicks <i>Post to TikTok</i>.</li>
+<li><b>Review before posting:</b> CN.AI shows the connected creator's nickname and avatar, an editable caption, a <i>Who can view this video</i> menu filled from the creator's allowed privacy options (no default is pre-selected), and switches for comments, Duet and Stitch (disabled when the creator's account does not allow them). TikTok's Music Usage Confirmation is shown before posting.</li>
+<li><b>Post:</b> the video file is uploaded directly from the user's computer (FILE_UPLOAD) and published with the selected settings. CN.AI shows the processing status until TikTok confirms the post, and tells the user it may take a few minutes to appear on their profile.</li>
+</ol>
+
+<h2>TikTok products and scopes</h2>
+<table><tr><th>Product / scope</th><th>Why CN.AI needs it</th></tr>
+<tr><td>Login Kit · <code>user.info.basic</code></td><td>Show which TikTok account is connected (display name, avatar) so the user always knows where the video will be posted.</td></tr>
+<tr><td>Content Posting API · <code>video.publish</code></td><td>Direct Post: publish the video the user chose, with the privacy level and interaction settings the user selected.</td></tr>
+<tr><td>Content Posting API · <code>video.upload</code></td><td>Upload to TikTok as a draft when the user prefers to finish editing and post from the TikTok app.</td></tr></table>
+
+<h2>Your data</h2>
+<p>CN.AI runs on your own computer. TikTok access tokens and your videos stay on that computer; they are not sent to our servers, sold or shared. See the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+
+<hr>
+<div class="top"><img src="logo.png" alt=""><div><h1 style="font-size:24px">CN.AI (Tiếng Việt)</h1><div class="dim">Ứng dụng đăng video mạng xã hội trên máy tính · macOS</div></div></div>
+<p>CN.AI là ứng dụng trên máy tính giúp nhà sáng tạo và đội nội dung nhỏ lên kế hoạch, làm và đăng video dọc ngắn lên <b>chính</b> trang Facebook và tài khoản TikTok của mình.</p>
+<ul>
+<li><b>Lên kế hoạch:</b> lịch nội dung theo tuần cho từng kênh, chủ tài khoản duyệt trước khi làm.</li>
+<li><b>Viết:</b> kịch bản, chú thích, hashtag; mọi bài chờ chủ tài khoản duyệt.</li>
+<li><b>Dựng:</b> gửi kịch bản đã duyệt sang phần mềm C-Cut trên cùng máy để dựng video 9:16.</li>
+<li><b>Đăng TikTok:</b> kết nối tài khoản bằng TikTok Login Kit; trước khi đăng, người dùng xem tài khoản sẽ đăng, sửa chú thích, tự chọn ai được xem, bật/tắt bình luận, Duet, Stitch và thấy Xác nhận sử dụng âm nhạc của TikTok; video tải thẳng từ máy lên TikTok.</li>
+</ul>
+<p>Mã truy cập TikTok và video chỉ lưu trên máy người dùng. Liên hệ: <a href="mailto:dvchinh155@gmail.com">dvchinh155@gmail.com</a></p>
+
+<hr><footer>© 2026 CN.AI · <a href="privacy.html">Privacy / Quyền riêng tư</a> · <a href="terms.html">Terms / Điều khoản</a> · <a href="mailto:dvchinh155@gmail.com">Contact</a></footer>
+</div></body></html>
