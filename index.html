@@ -27,13 +27,14 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}footer{font-size:13px
 <li><b>Connect:</b> in CN.AI → Settings, the user clicks <i>Connect TikTok</i>. The TikTok login page opens (Login Kit, OAuth with PKCE); the user signs in and authorizes CN.AI. The user can disconnect at any time.</li>
 <li><b>Choose a video:</b> in the post list, the user opens a finished video and clicks <i>Post to TikTok</i>.</li>
 <li><b>Review before posting:</b> CN.AI shows the connected creator's nickname and avatar, an editable caption, a <i>Who can view this video</i> menu filled from the creator's allowed privacy options (no default is pre-selected), and switches for comments, Duet and Stitch (disabled when the creator's account does not allow them). TikTok's Music Usage Confirmation is shown before posting.</li>
-<li><b>Post:</b> the video file is uploaded directly from the user's computer (FILE_UPLOAD) and published with the selected settings. CN.AI shows the processing status until TikTok confirms the post, and tells the user it may take a few minutes to appear on their profile.</li>
+<li><b>Post:</b> the video file is uploaded directly from the user's computer (FILE_UPLOAD) and published with the selected settings. CN.AI shows the processing status until TikTok confirms the post, and tells the user it may take a few minutes to appear on their profile. Alternatively the user clicks <i>Send to TikTok drafts</i> to receive the video in the TikTok app inbox and post it from there.</li>
 </ol>
 
 <h2>TikTok products and scopes</h2>
 <table><tr><th>Product / scope</th><th>Why CN.AI needs it</th></tr>
 <tr><td>Login Kit · <code>user.info.basic</code></td><td>Show which TikTok account is connected (display name, avatar) so the user always knows where the video will be posted.</td></tr>
 <tr><td>Content Posting API · <code>video.publish</code></td><td>Direct Post: publish the video the user chose, with the privacy level and interaction settings the user selected.</td></tr>
+<tr><td>Content Posting API · <code>video.upload</code></td><td>The <i>Send to TikTok drafts</i> button uploads the video to the creator's TikTok inbox, so they can finish editing and post it themselves in the TikTok app.</td></tr>
 </table>
 
 <h2>Your data</h2>
